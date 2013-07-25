@@ -42,3 +42,34 @@ gem 'jbuilder', '~> 1.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'cancan'
+gem 'compass-rails'
+gem 'devise'
+gem 'devise_invitable'
+gem 'figaro'
+gem 'rolify'
+gem 'zurb-foundation'
+
+group :assets do
+  gem 'therubyracer', :platform=>:ruby
+end
+
+group :development do
+  gem 'hub', :require=>nil
+  gem 'quiet_assets'
+end
+
+group :development, :test do
+  gem 'rspec-rails'
+end
+
+group :production do
+  gem 'thin'
+end
+
+group :test do
+  gem 'database_cleaner'
+  gem 'email_spec'
+end
+
